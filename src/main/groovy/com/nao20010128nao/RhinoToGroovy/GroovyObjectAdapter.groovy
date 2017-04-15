@@ -11,7 +11,7 @@ class GroovyObjectAdapter implements GroovyObject{
     private Scriptable obj
     private Context ctx
 
-    GroovyObjectAdapter(Scriptable obj,Context ctx){
+    GroovyObjectAdapter(Scriptable obj,Context ctx=Context.currentContext){
         this.@obj=obj
         this.@ctx=ctx
     }
